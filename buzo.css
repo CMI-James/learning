@@ -1,0 +1,17 @@
+html{
+    margin: 0 none;
+    padding: 0 none;
+    border-bottom: 0 none;
+    background-color: indigo;
+    background-image: url(children.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#name{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Trebuchet MS',sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 3px 0px 3px rgb(39, 39, 141);
+}
