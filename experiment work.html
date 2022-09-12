@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .company{
+            padding: 0.5cm 0cm 0cm 1cm;
+            font-size: 0.7cm;
+            font-weight: bold;
+        }
+        .container{
+display: grid;
+/*grid-template: 2 auto/ 1 auto;*/
+margin: 0;
+grid-gap: 0.2cm;
+padding: -1rem 0rem 0rem 0rem;
+
+        }
+     
+        .d{ text-align: end;}
+        .box-one{
+
+            height: 4rem;
+         width: 50rem;
+         padding-top: 2rem;
+        }
+        .box-two{
+            grid-column: 2;
+            border: 0.05cm solid rgb(218, 216, 216) ;
+            border-top: 0cm;
+            border-bottom: 0cm;
+            text-align: center;
+            margin: -1cm 2cm 0cm 4cm;
+            padding-top: 2rem;
+            padding-bottom: 0rem;
+           
+    direction: rtl 1cm;
+        }
+        em{
+            color: orange;
+            font-family: 'Times New Roman';
+            font-style: normal;
+        }
+        .box-three{
+            width: 13rem;
+            height: 1.5rem;
+            color: white;
+            background-color: rgb(59, 58, 58);
+            text-align: center;
+            border-top: 0cm;
+            border-bottom: 0cm;
+            border: 0.05cm solid rgb(218, 216, 216) ;
+            padding: 1rem 1rem 1rem 1rem;
+
+        }
+        .container-two{
+            display: flex;
+            /*grid-template: 7 auto/ 1 auto;*/
+            font-size: large;
+            margin: 0cm 1cm 0cm 1cm;
+            
+        }
+        .container-three{
+            display: grid;
+            grid-template: 100px 100px/ 100px 100px ;
+        }
+
+        .box-four-one{
+            background-color: rgb(59, 58, 58);
+            color: white;
+            margin: 0cm -5.95cm 1.2cm 1.04cm;
+            list-style: circle;
+            padding: 1rem 1rem 1rem 1rem;
+        }
+        .box-four-two{
+            grid-column: 2/4;
+            margin: 0cm 1.04cm -3.65cm 6cm;
+          
+
+        }
+        .box-four-three{
+            grid-column: 1/2;
+                margin:-1.14cm -5.95cm -1cm 1.04cm;
+                
+    }
+    h3{}
+    ul{
+        list-style: square;
+        padding-left: 1rem;
+    }
+    .box-four-two>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .container-four{
+        display: grid;
+        grid-template: 10cm 30cm/ 5cm;
+
+    }
+       
+    .box-five-one{
+
+        width: 10rem;
+        height 4rem;
+    }
+    .box-five-two{
+
+width: 20rem;
+height 4rem;
+}
+.ignore{
+    display: none;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header class="container"><div class="box company box-one" >Growing <em>Company</em></div>
+    <div class="box box-two" ><h3>Choose your language</h3>
+    <p>logo</p></div></header>
+    <section><div class="container-two ">
+        <div class="box-three">New Page</div>
+        <div class="box-three">About Us</div>
+        <div class="box-three">Services</div>
+        <div class="box-three">Partners</div>
+        <div class="box-three">Contacts</div>
+        <div class="box-three">Solutions</div>
+        <div class="box-three">Products</div>
+    </div></section>
+    <section><div class="container-three">
+        <div class="box-four-one"><li>What We Do</li></div>
+        <div class="box-four-two"><img src="Screenshot (22).png" alt="Dazz right"></div>
+        <div class="box-four-three">
+            <h3 class="h3">Testimonials</h3>
+            <ul>
+                <li>lorem ipsum</li>
+                <li>Consectetueur</li>
+                <li>Pleasure</li>
+                <li>Direction</li>
+                <li>Plane</li>
+            </ul>
+        </div>
+    </div></section>
+    <section><div class="container-four ignore">
+        <div class="box-five-one">News & Events</div>
+        <div class="box-five-two"> Welcome to our Business Company!</div>
+    </div>
+    </section>
+    <footer></footer>
+</body>
+</html>

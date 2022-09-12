@@ -1,0 +1,13 @@
+.boxes{
+    border: 10px solid brown;
+    background-color: bisque;
+}
+.box{
+    width: 10rem;
+    height: 10rem;
+}
+.box-one{background-color: blue;}
+.box-two{background-color: tomato;
+position: relative
+;left: 10rem;}
+.box-three{background-color: greenyellow;}

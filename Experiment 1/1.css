@@ -1,0 +1,25 @@
+html{
+
+
+}
+::selection {
+    color: brown;
+    background-color: black;
+}
+a:link{
+    color: dodgerblue;
+    background-color: brown;
+
+}
+a:hover{
+    color: azure;
+    background-color: black;
+}
+a:visited{ color: blue;
+background-color: red;}
+.box{
+    background-color: gold;
+    height: 400px;
+    width: 700px;
+    box-shadow: 300px 80px;
+}

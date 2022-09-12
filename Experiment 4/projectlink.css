@@ -1,0 +1,38 @@
+
+header{
+    text-align: center;
+}
+a[href]{
+    color: brown;
+    font-size: 3cm;
+    text-align: end;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    cursor: grab;
+}
+.button{
+    width: 10cm;
+    height: 4cm;
+    color: cornflowerblue;
+    background-color: red;
+    text-align: center;
+    padding: 1px 1px 1px 1px;
+    border-radius: 2cm;
+    margin: auto;
+
+}
+.button a:hover{
+    background-color: blue;
+    text-align: center;
+    padding: 1px 1px 1px 1px;
+    border-radius: 2cm;
+   
+    width: 15cm;
+    height: 4cm;
+    
+
+    
+
+}

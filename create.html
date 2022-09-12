@@ -1,18 +1,113 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Random Company Incoperated
-        </title>
-<p>This is the official accout of the Random Group Nigeria Branch, University of Nigeria, Nsukka.</p>
-    </head>
-    <body>
-        <img src="Screenshot (22).png" alt="image not available at the moment">
-        <p>Why was RD created?</p>
-        <p>it was created the solve the problem nigeria is facing as a whole;
-            it was created to reduce unemployment in Nigeria;
-            it was created as a means of reducing the poverty rate in Nigeria.
-        </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 1.5;
+        padding: 1rem;
+        }
+    label{
+        display: block;
+    }
+    .form-one{
+        margin-bottom: 1rem;
+    }
+    input{
+        border: 1px solid black;
+        padding: 0.5rem 0.7rem;
+        border-radius: 5px;
+        transition: border-color 0.30s, box-shadow 0.30s;
 
-    </body>
+    }
+    input:focus{
+        border-color: blue;
+        outline: 0;
+        box-shadow: 0 0 0 4px aqua;
+    }
+    button{
+        background-color: rgb(0, 179, 255)
+        ;color: white;
+        cursor: grab;
+        border: 0;
+        padding: 0.5rem 0.7rem;
+        border-radius: 5px;
+    }
+    button:hover{
+        background-color: rgb(82, 82, 254);
+    }
+    button:after{
+        background-color: rgb(3, 3, 114);
+    }
+   
+
+    </style>
+</head>
+<body>
+    <form >
+        <div class="form-one">
+            <label for="name">Name</label>
+            <input id="name" type="text">
+        </div>
+        <div class="form-one">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="eg. @example.com" maxlength="10" list="numbers">
+            <datalist id="numbers"><option >+234-70</option>
+                <option>+234-71</option>
+                <option>+234-80</option>
+                <option>+234-81</option>
+                <option>+234-90</option>
+                <option>+234-91</option></datalist>
+        </div>
+        <div class="form-one">
+            <label for="number">Number</label>
+            <input type="number" id="number"  > 
+            <select id="numbers"><option >+234-70</option>
+            <option>+234-71</option>
+            <option>+234-80</option>
+            <option>+234-81</option>
+            <option>+234-90</option>
+            <option>+234-91</option></select>
+        </div>
+        <div>
+            <label for="text">Courses</label>
+            <input type="text"  id="ourses" required>
+                <select id="ourses">
+                    <optgroup label="Front-end Courses"><option value="1">HTML</option>
+                    <option value="2">CSS</option>
+                    <option value="3">JAVASCRIPT</option></optgroup>
+                </select>
+            </input>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Back-end" disabled checked>
+            <label for="Back-end">Back-end</label>
+
+            
+        </div>
+        <div><input type="radio" name="membership" id="gold">
+        <label for="gold">Gold</label></div>
+
+        <div><input type="radio" name="membership" id="silver">
+            <label for="silver">Silver</label></div>
+            <div><input type="range" min="0" max="100" value="90"></div>
+            <div><input type="file" id="file1" multiple accept=".mkv, image/*">
+            <label for="file1"> choose a file</label></div>
+            <div><section><h2>Billing</h2>
+            <input type="text"><input type="text"><input type="text"></section></div>
+            <div><fieldset>Payment</fieldset> <legend><input type="text"><input type="text"><input type="text"></legend></div>
+
+            
+        
+        <div><button type="reset">Reset</button> <button type="submit">Submit</button></div>
+   
+    </form>
+   
+</body>
 </html>
