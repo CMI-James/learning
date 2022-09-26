@@ -1,0 +1,54 @@
+body {
+  margin: 0%;
+  position: relative;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #111b21;
+
+  width: 69vw;
+  float: right;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-pic {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  border-radius: 100%;
+  padding: 5px;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+.nav-text {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  text-align: left;
+  margin-left: 5px;
+
+  color: #fff;
+}
+.nav-text-heading {
+  font-weight: 700;
+  font-size: 17px;
+  margin: 0;
+}
+.nav-text-par {
+  font-size: 11px;
+  margin: 0%;
+  color: #b7b6b6;
+}
+.nav-menu {
+  display: inline-block;
+  margin-right: 20px;
+}
+.nav-options {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 9px;
+  margin-top: 8px;
+  color: #fff;
+}
