@@ -1,54 +1,61 @@
+:root {
+  --color-primary: #fff;
+}
+
 body {
   margin: 0%;
   position: relative;
 }
 .main {
+  background-color: #202c33;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-color: #111b21;
-
-  width: 69vw;
   float: right;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: space-between;
+  padding: 10px;
+  width: 63vw;
 }
 
 .nav-pic {
-  width: 2.5rem;
-  height: 2.5rem;
-  display: inline-block;
   border-radius: 100%;
-  padding: 5px;
-  margin-left: 8px;
-  margin-top: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-grow: 1;
+  height: 40px;
+  margin: 0 15px 0 0;
+  width: 40px;
 }
 .nav-text {
-  display: inline-block;
-  position: absolute;
-  top: 10px;
+  color: var(--color-primary);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
   text-align: left;
-  margin-left: 5px;
-
-  color: #fff;
 }
 .nav-text-heading {
-  font-weight: 700;
-  font-size: 17px;
-  margin: 0;
+  color: var(--color-primary);
+  font-size: 16.5px;
+  font-weight: 600;
+  line-height: 16px;
+  margin: 0 0 5px 0;
 }
 .nav-text-par {
-  font-size: 11px;
-  margin: 0%;
   color: #b7b6b6;
+  font-size: 11px;
+  font-size: 13px;
+  margin: 0%;
 }
 .nav-menu {
-  display: inline-block;
-  margin-right: 20px;
+  cursor: pointer;
+  display: flex;
+  margin: 0 20px 0 20px;
 }
 .nav-options {
-  width: 1.2rem;
-  height: 1.2rem;
+  color: var(--color-primary);
+  height: 18px;
   padding: 9px;
-  margin-top: 8px;
-  color: #fff;
+  width: 18px;
 }
