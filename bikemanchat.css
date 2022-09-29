@@ -1,0 +1,24 @@
+.chat-section {
+  background-color: grey;
+  width: 63vw;
+  float: right;
+  display: flex;
+  justify-content: space-around;
+}
+img {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+
+input {
+  flex-grow: 1;
+  border-radius: 15px;
+  height: 40px;
+  align-items: center;
+  outline: 0;
+}
+::placeholder{
+    font-size: 1.2rem;
+    padding: 5px;
+}
