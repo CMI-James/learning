@@ -27,27 +27,25 @@
           ></path>
         </svg>
       </div>
+
       <input type="text" placeholder="Type a message" />
-      <div class="first-emoji">
-        <svg viewBox="0 0 24 24" width="24" height="24" class="second-emoji">
-          <path
-            fill="#8696a0"
-            d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z"
-          ></path>
-        </svg>
+      <div class="first-emoji second-emoji">
+        <img src="/resources/mic3.svg" alt="" />
       </div>
-      <p>sdfghk,hjdrtsfzb bhjfvgngrtghht</p>
-      <img src="children.png" alt="" />
     </div>
-  </body>
-  <script src="">
-    document.querySelector("img");
-    img.addEventListener("click", function () {
-      if (img.src != "children.png") {
-        img.src = "children.png";
-      } else {
-        img.src = "Screenshot (22).png";
+
+    <script>
+      var img = document.querySelectorAll("img")[0];
+      var button1 = document.querySelector("input");
+      var greater = button1.value.length;
+      button1.addEventListener("keyup", click1);
+      function click1() {
+        if (greater >= 1) {
+          img.src = "/resources/enter2.svg";
+        } else {
+          img.src = "/resources/mic3.svg";
+        }
       }
-    });
-  </script>
+    </script>
+  </body>
 </html>

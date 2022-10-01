@@ -2,12 +2,10 @@ body {
   margin: 0%;
   padding: 0%;
 }
-.first-emoji{
+.first-emoji {
   margin: auto;
   padding: 5px 10px 5px 10px;
-
 }
-
 
 .chat-section {
   background-color: #fff;
@@ -17,16 +15,16 @@ body {
   display: flex;
   justify-content: space-around;
   position: relative;
+  background-color: #202c33;
 }
-svg{
+
+svg {
   height: 27px;
   width: 27px;
   margin-right: 8px;
   fill: #d1d7db;
-  cursor: text;
- 
+  cursor: click;
 }
- 
 
 input {
   flex-grow: 1;
@@ -40,7 +38,7 @@ input {
 
   border: 1px;
   padding: 9px 12px 11px 12px;
-cursor: ;
+  cursor: text;
   margin: auto 10px auto 10px;
 }
 ::placeholder {
