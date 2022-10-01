@@ -2,49 +2,47 @@ body {
   margin: 0%;
   padding: 0%;
 }
-.first-emoji {
+
+.chat-section {
+  background-color: #202c33;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 52px;
+  justify-content: space-around;
+  padding: 5px 10px 5px 17px;
+  position: relative;
+}
+
+.chat-emoji {
+  cursor: click;
+  fill: #d1d7db;
+  height: 24px;
+  margin-right: 8px;
+  width: 24px;
+}
+.chat-emoji-div {
   margin: auto;
   padding: 5px 10px 5px 10px;
 }
 
-.chat-section {
-  background-color: #fff;
-  padding: 5px 10px 5px 17px;
-  height: 52px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  background-color: #202c33;
-}
-
-svg {
-  height: 27px;
-  width: 27px;
-  margin-right: 8px;
-  fill: #d1d7db;
-  cursor: click;
-}
-
-input {
-  flex-grow: 1;
-  border-radius: 10px;
-  height: 23px;
-  background-color: #2a3942;
+.chat-text {
   align-items: center;
-  outline: 0;
-  color: #d1d7db;
-  font-size: 15px;
-
+  background-color: #2a3942;
+  border-radius: 10px;
   border: 1px;
-  padding: 9px 12px 11px 12px;
+  color: #d1d7db;
   cursor: text;
-  margin: auto 10px auto 10px;
-}
-::placeholder {
-  font-size: 1.2rem;
-  padding: 5px;
-  opacity: 2px;
-  color: #8696a0;
+  flex-grow: 1;
   font-size: 15px;
+  height: 23px;
+  margin: auto 10px auto 10px;
+  outline: 0;
+  padding: 9px 12px 11px 12px;
+}
+.chat-text::placeholder {
+  color: #8696a0;
+  font-size: 1.2rem;
+  font-size: 15px;
+  opacity: 2px;
+  padding: 5px;
 }

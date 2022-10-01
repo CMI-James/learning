@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .container {
+    background-color: black;
+    width: 60vw;
+    height: 10vh;
+    flex-direction: row;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+  }
+  .box {
+    display: inline-block;
+    background-color: black;
+    margin: auto;
+    color: white;
+    list-style: none;
+
+    font-size: 2rem;
+  }

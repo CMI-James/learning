@@ -7,39 +7,45 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="lmao.css"> -->
     <style>
+      body {
+        margin: 0%;
+        padding: 0;
+      }
       .container {
         background: #000;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 0 1rem;
       }
       .first {
         color: white;
-        padding: 48px;
-        padding-left: 20x;
+        margin: auto 10px auto 10px;
+        text-align: left;
       }
       ul {
         color: white;
         list-style: none;
         display: flex;
+        flex-direction: row;
       }
       li {
-        padding: 24px;
+        display: flex;
+        justify-content: space-around;
+        margin: auto 8px auto 8px;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="first">Google</div>
-
-      <ul>
-        <li>About</li>
-        <li>Courses</li>
-        <li>Forum</li>
-        <li>Learning Paths</li>
-        <li>Contacts</li>
-      </ul>
+      <div class="second">
+        <ul>
+          <li>About</li>
+          <li>Courses</li>
+          <li>Forum</li>
+          <li>Learning Paths</li>
+          <li>Contacts</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

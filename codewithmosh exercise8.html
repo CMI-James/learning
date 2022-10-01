@@ -49,8 +49,16 @@
         font-weight: 700;
         font-size: 30px;
       }
-      .checkbox{
+      .form-two{
+        display: flex;
+        flex-direction: row;
+        margin: 10px auto 10px auto;
         
+      }
+      .tick{
+        width: 15px;
+        height: 15px;
+        margin: auto 3px auto 3px;
       }
     </style>
   </head>
@@ -81,7 +89,7 @@
         />
       </div>
       <div class="form-one form-two">
-        <input type="checkbox" name="checkbox" id="checkbox" />
+        <input type="checkbox" name="checkbox" id="checkbox" class="tick" />
         <label for="checkbox">Remember me</label>
       </div>
       <div><button type="submit">Sign in</button></div>
