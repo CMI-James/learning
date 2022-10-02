@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
     <style>
+      * {
+        color: #fff;
+      }
       body {
         margin: 0;
         padding: 0%;
@@ -15,11 +18,15 @@
       }
       .top {
         color: black;
-        height: 20px;
+        height: 50px;
         display: flex;
         flex-direction: row;
         float: right;
         justify-content: space-around;
+        margin: auto 0 auto 0;
+      }
+      .top-img {
+        border-radius: 100%;
       }
       .top-link {
         margin: auto 8px auto 8px;
@@ -32,35 +39,37 @@
     </style>
   </head>
   <body>
-    <div class="top ">
-      <a
-        href="https://mail.google.com/mail/?authuser=0&ogbl"
-        target="_blank"
-        class="top-link"
-        >Gmail</a
-      >
-      <a
-        href="https://www.google.com.ng/imghp?hl=en&authuser=0&ogbl"
-        target="_blank"
-        class="top-link"
-        >Images</a
-      >
-      <a
-        href="https://www.google.com.ng/intl/en/about/products"
-        target="_blank"
-        class="top-link"
-        >Others</a
-      >
-      <a
-        href="https://www.google.com.ng/intl/en/about/products"
-        target="_blank"
-        class="top-link"
-        ><img src="unnamed.jpg" alt="Ilonze Chibuikes Picture"
-      /></a>
-    </div>
-
-
-
-    
+    <header>
+      <div class="top">
+        <a
+          href="https://mail.google.com/mail/?authuser=0&ogbl"
+          target="_blank"
+          class="top-link"
+          >Gmail</a
+        >
+        <a
+          href="https://www.google.com.ng/imghp?hl=en&authuser=0&ogbl"
+          target="_blank"
+          class="top-link"
+          >Images</a
+        >
+        <a
+          href="https://www.google.com.ng/intl/en/about/products"
+          target="_blank"
+          class="top-link"
+          >Others</a
+        >
+        <a
+          href="https://www.google.com.ng/intl/en/about/products"
+          target="_blank"
+          class="top-link"
+          ><img
+            class="top-img"
+            src="unnamed.jpg"
+            alt="Ilonze Chibuikes Picture"
+        /></a>
+      </div>
+    </header>
+    <div><p>Google</p></div>
   </body>
 </html>
