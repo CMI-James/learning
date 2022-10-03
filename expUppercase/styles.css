@@ -1,0 +1,27 @@
+#normal-text {
+  height: 200px;
+  width: 200px;
+  background-color: bisque;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+#uppercase-text {
+    height: 200px;
+    width: 200px;
+  background-color: rgb(248, 220, 187);
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+#to-uppercase{
+    background-color: aqua;
+    height: 30px;
+    cursor: pointer;
+}
