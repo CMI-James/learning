@@ -13,7 +13,11 @@ let boldText = document.querySelector("#to-Bold");
 let italizedText = document.querySelector("#to-italize");
 let underlinedText = document.querySelector("#to-underline");
 let increaseFont = document.querySelector("#to-increase-font");
-
+let inputText = document.querySelector("#inputtext");
+inputText.addEventListener("keydown", INT);
+function INT() {
+  normalText.innerHTML = inputText.value;
+}
 lowerCase.addEventListener("click", LC);
 function LC() {
   document.querySelector("#uppercase-text").innerHTML =
