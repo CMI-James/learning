@@ -6,6 +6,8 @@
   padding: 2rem;
   width: 90vw;
   margin: auto;
+  border: 3px solid black;
+  border-radius: 10px;
 }
 #inputtext {
   width: 90vw;
