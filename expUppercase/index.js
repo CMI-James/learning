@@ -14,38 +14,38 @@ let italizedText = document.querySelector("#to-italize");
 let underlinedText = document.querySelector("#to-underline");
 let increaseFont = document.querySelector("#to-increase-font");
 let inputText = document.querySelector("#inputtext");
-inputText.addEventListener("keydown", INT);
-function INT() {
-  normalText.innerHTML = inputText.value;
-}
-lowerCase.addEventListener("click", LC);
-function LC() {
-  document.querySelector("#uppercase-text").innerHTML =
-    normalText.innerHTML.toLowerCase();
-}
-upperCase.addEventListener("click", UP);
-function UP() {
-  document.querySelector("#uppercase-text").innerHTML =
-    normalText.innerHTML.toUpperCase();
-}
-boldText.addEventListener("click", BD);
-function BD() {
-  document.querySelector("#uppercase-text").innerHTML =
-    normalText.innerHTML.bold();
-}
 
-italizedText.addEventListener("click", IT);
-function IT() {
-  document.querySelector("#uppercase-text").innerHTML =
-    normalText.innerHTML.italics();
-}
-underlinedText.addEventListener("click", UD);
-function UD() {
-  document.querySelector("#uppercase-text").innerHTML =
-    normalText.style.textDecoration = "underline";
-}
+let changedText = document.querySelector("#uppercase-text");
+
+inputText.addEventListener("keyup", function () {
+  normalText.innerHTML = inputText.value;
+});
+
+lowerCase.addEventListener("click", function () {
+  changedText.innerHTML = normalText.innerHTML.toLowerCase();
+});
+
+upperCase.addEventListener("click", function () {
+  changedText.innerHTML = normalText.innerHTML.toUpperCase();
+});
+
+boldText.addEventListener("click", function () {
+  changedText.innerText = normalText.innerHTML;
+  changedText.style.fontWeight = "bold";
+});
+
+italizedText.addEventListener("click", function () {
+  changedText.innerText = normalText.innerHTML;
+  changedText.style.fontStyle = "italic";
+});
+
+underlinedText.addEventListener("click", function () {
+  changedText.innerText = normalText.innerHTML;
+  changedText.style.textDecoration = "underline";
+});
+
 increaseFont.addEventListener("click", IF);
 function IF() {
-  document.querySelector("#uppercase-text").innerHTML =
-    normalText.style.fontSize = "100px";
+  changedText.innerText = normalText.innerHTML;
+  changedText.style.fontSize = "50px";
 }
