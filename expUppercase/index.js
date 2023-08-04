@@ -1,16 +1,8 @@
-/*var normalText = document.querySelector("#normal-text");
-var uppercaseText = document.querySelector("#uppercase-text");
-var change = uppercaseText.innerHTML.toUpperCase;
-normalText.addEventListener("keyup", convert);
-
-
-*/
-
 let normalText = document.querySelector("#normal-text");
 let lowerCase = document.querySelector("#to-lowercase");
 let upperCase = document.querySelector("#to-uppercase");
-let boldText = document.querySelector("#to-Bold");
-let italizedText = document.querySelector("#to-italize");
+let boldText = document.querySelector("#to-bold");
+let italizedText = document.querySelector("#to-italicize");
 let underlinedText = document.querySelector("#to-underline");
 let increaseFont = document.querySelector("#to-increase-font");
 let inputText = document.querySelector("#inputtext");
@@ -44,8 +36,14 @@ underlinedText.addEventListener("click", function () {
   changedText.style.textDecoration = "underline";
 });
 
-increaseFont.addEventListener("click", IF);
-function IF() {
+increaseFont.addEventListener("click", function () {
   changedText.innerText = normalText.innerHTML;
-  changedText.style.fontSize = "50px";
-}
+  changedText.style.fontSize = "24px";
+});
+
+let clearTextBtn = document.querySelector("#clear-text");
+clearTextBtn.addEventListener("click", function () {
+  normalText.innerHTML = "";
+  changedText.innerHTML = "";
+  inputText.value = "";
+});

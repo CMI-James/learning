@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <input type="text" id="inputtext" maxlength="120" />
-    <div class="container">
-      <div><p id="normal-text"></p></div>
-      <div><p id="uppercase-text"></p></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="inputtext" maxlength="120" placeholder="Type your text here">
+    <div class="text-area">
+      <div class="text-box" id="normal-text"></div>
+      <div class="text-box" id="uppercase-text"></div>
     </div>
-    <div class="buttonarea">
-      <button id="to-uppercase">To Uppercase</button>
-      <button id="to-lowercase">To Lowercase</button>
-      <button id="to-Bold">To Bold</button>
-      <button id="to-italize">To Italize</button>
-      <button id="to-underline">To Underline</button>
-      <button id="to-increase-font">To Increasfont</button>
-    </div>
-    <script src="index.js"></script>
-  </body>
+  </div>
+  <div class="buttonarea">
+    <button id="to-uppercase">Uppercase</button>
+    <button id="to-lowercase">Lowercase</button>
+    <button id="to-bold">Bold</button>
+    <button id="to-italicize">Italic</button>
+    <button id="to-underline">Underline</button>
+    <button id="to-increase-font">Increase Font</button>
+    <button id="clear-text">Clear Text</button>
+  </div>
+  <script src="index.js"></script>
+</body>
 </html>
